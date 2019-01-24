@@ -5,14 +5,10 @@
 	<title>HCI Project Portfolio</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/introHCI.css" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	
-	<script src="js/introHCI.js"></script>
-
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -28,9 +24,9 @@
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
-			<button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button>
+			<h1>Samuel Blake</h1>
+			<p>computer science &middot; mathematics &middot; cognitive science</p>
+			<button id="testjs" class="btn btn-primary btn-lg">Click Me!</button>
 		</div>
 
 
@@ -38,55 +34,64 @@
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		<div class="project" id="project1">
-			<a href="" class="thumbnail">
-				<img src="images/lorempixel.people.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Waiting in Line</p>
+		<div id="project1">
+			<a href="http://tea-ucsd.herokuapp.com/login" class="thumbnail">
+				<img src="images/TEA.png" alt="TEA Web-App image">
+				<p>TEA, a Project Workflow Application</p>
 			</a>
+			<p id="TEA">Tired of the stresses of starting and completing a group project?
+				Need help finding a group project to join? Or you want to display your project for others to join?
+				Look no further! Check out TEA, a Project Workflow Application. Not only can you join and create projects, TEA
+				will also help you complete your project! Equipped with Milestones, Announcements, a Calendar, and more, your project
+				dashboard will motivate you and make it easy to track your project's progress!
+			</p>
 		</div>
-		<div class="project" id="project2">
-			<a href="#" class="thumbnail">
+		<div id="project2">
+			<a href="project.html" class="thumbnail">
 				<img src="images/lorempixel.city.1.jpeg" alt="Lorem Pixel image" class="img">
 				<p>Needfinding</p>
 			</a>
 		</div>
-		<div class="project" id="project3">
-			<a href="#" class="thumbnail">
+		<div id="project3">
+			<a href="project.html" class="thumbnail">
 				<img src="images/lorempixel.technics.1.jpeg" alt="Lorem Pixel image" class="img">
 				<p>Prototyping</p>
 			</a>
 		</div>
-		<div class="project" id="project4">
-			<a href="#" class="thumbnail">
+		<div id="project4">
+			<a href="project.html" class="thumbnail">
 				<img src="images/lorempixel.abstract.1.jpeg" alt="Lorem Pixel image" class="img">
 				<p>Heuristic Evaluation</p>
 			</a>
 		</div>
-		<div class="project" id="project5">
-			<a href="#" class="thumbnail">
+		<div id="project5">
+			<a href="project.html" class="thumbnail">
 				<img src="images/lorempixel.abstract.8.jpeg" alt="Lorem Pixel image" class="img">
 				<p>Visualization</p>
 			</a>
 		</div>
-		<div class="project" id="project6">
-			<a href="#" class="thumbnail">
+		<div id="project6">
+			<a href="project.html" class="thumbnail">
 				<img src="images/lorempixel.people.2.jpeg" alt="Lorem Pixel image" class="img">
 				<p>Social design</p>
 			</a>
 		</div>
-		<div class="project" id="project7">
-			<a href="#" class="thumbnail">
+		<div id="project7">
+			<a href="project.html" class="thumbnail">
 				<img src="images/lorempixel.technics.2.jpeg" alt="Lorem Pixel image" class="img">
 				<p>Gestural interaction</p>
 			</a>
 		</div>
-		<div class="project" id="project8">
-			<a href="#" class="thumbnail">
+		<div id="project8">
+			<a href="project.html" class="thumbnail">
 				<img src="images/lorempixel.city.2.jpeg" alt="Lorem Pixel image" class="img">
 				<p>Design tools</p>
 			</a>
 		</div>
 	</div>
-
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<!-- Include all compiled plugins (blelow), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/introHCI.js"></script>
 </body>
 </html>

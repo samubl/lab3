@@ -21,6 +21,10 @@ body {
 	background: none;
 }
 
+#project1.hover {
+     background-color: rgb(23, 255, 120)
+}
+
 .jumbotron:after {
      content:"";
      background: url("../images/lorempixel.jumbotron.jpeg");
@@ -39,6 +43,14 @@ body {
 
 .jumbotron p.active {
      color: #1f6ddd;
+}
+
+.jumbotron h1.active {
+     color: #dd5b1f;
+}
+
+#testjs.movement{
+     color: rgb(75, 204, 0);
 }
 
 .project a {

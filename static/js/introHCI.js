@@ -10,14 +10,17 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$("#testjs").click(function(e) {
-		$('.jumbotron h1').text("Javascript is connected");
-		$(".jumbotron p").toggleClass("active");
-		$("#testjs").text("Experience Chan! It's not a lot of questions." + 
-		" Too many questions is the Chan disease. " + 
-		" The best way is just to observe the noise of the world." + 
-		" The answer to your questions? Ask your own heart.");
+		$('.jumbotron h1').toggleClass("active");
+        $(".jumbotron p").toggleClass("active");
+        $("#testjs").toggleClass("movement");
+        if ($("#testjs").text() == "Click Me!") {
+            $("#testjs").text("Click Me Again!");
+        } else {
+            $("#testjs").text("Click Me!");
+        }
 	});
 	$("a.thumbnail").click(projectClick);
+	$("#project1").mouseenter(teaHover);
 }
 
 // Add any additional listeners here
@@ -37,4 +40,13 @@ function projectClick(e) {
 	 } else {
 		description.fadeOut();
 	 }
+}
+
+function teaHover(e) {
+	// prevent the page from reloading    
+	console.log("Tea Hover");  
+	//e.preventDefault();
+	// In an event handler, $(this) refers to      
+	// the object that triggered the event      
+	$("#project1").toggleClass("hover");
 }
